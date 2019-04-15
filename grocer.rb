@@ -7,7 +7,11 @@ def consolidate_cart(cart)
 end
 
 def apply_coupons(cart, coupons)
-  # code here
+  [].tap do |c|
+  		rand(2).times do
+  			c.push(coupons.sample)
+  		end
+  	end
 end
 
 def apply_clearance(cart)
